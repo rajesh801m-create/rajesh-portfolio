@@ -375,3 +375,55 @@ img {
     width: 100%;
   }
 }
+/* Hero mobile fix */
+@media (max-width: 768px) {
+  .hero,
+  .hero-content,
+  .hero-container,
+  .home,
+  .home-content,
+  #home,
+  #hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero img,
+  .home img,
+  #home img,
+  #hero img,
+  .profile-img,
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .hero h1,
+  .home h1,
+  #home h1,
+  #hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero h2,
+  .home h2,
+  #home h2,
+  #hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p,
+  .home p,
+  #home p,
+  #hero p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
